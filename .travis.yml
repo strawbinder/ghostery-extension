@@ -10,7 +10,7 @@ install:
   - pip install transifex-client
   
 script:
-  - echo "Run *************"
+  - echo "Run *************sss"
   
 after_success:
   - chmod +x ./.tx.sh
