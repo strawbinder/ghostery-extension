@@ -1,7 +1,7 @@
 language: python
 node_js:
   - "9"
-sudo: false
+sudo: true
 
 env:
   global:
