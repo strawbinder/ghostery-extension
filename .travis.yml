@@ -9,6 +9,9 @@ env:
 install:
   - pip install transifex-client
   
+script:
+  - echo "Run *************"
+  
 after_success:
   - chmod +x ./.tx.sh
   - ./.tx.sh push
