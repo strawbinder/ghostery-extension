@@ -1,7 +1,4 @@
 language: python
-node_js:
-  - "9"
-sudo: true
 
 env:
   global:
@@ -9,18 +6,9 @@ env:
     - TX_TAG="txpull"
     - TX_COMMIT_TRANSLATIONS=true
 
-before_install:
-  - npm i -g npm
-
 install:
-  - npm ci --silent
   - pip install transifex-client
   
-script:
-  - node ./tools/licenses/fetchLicenses.js
-  - npm run lint
-  - npm run test.unit
-
 after_success:
   - chmod +x ./.tx.sh
   - ./.tx.sh push
