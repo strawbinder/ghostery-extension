@@ -5,7 +5,7 @@ sudo: false
 
 env:
   global:
-    - TX_BRANCH="develop"
+    - TX_BRANCH="feature/Transifex"
     - TX_TAG="txpull"
     - TX_COMMIT_TRANSLATIONS=true
 
