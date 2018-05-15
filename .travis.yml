@@ -1,4 +1,4 @@
-language: python
+language: generic
 node_js:
   - "9"
 sudo: required
